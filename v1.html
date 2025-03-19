@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="v1.css">
+</head>
+<body>
+    <div class="left-side">
+        <img src="SASI-LOGO-960x188-1-800x157-1.webp" alt="sasi logo" style="max-width: 100%; height: auto;" />
+        <h1>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</h1>
+        <h2>VISION</h2>
+        <p>To escalate the department by creativeness in technology for emerging and global needs through Training, Research & Development.</p>
+        <h2>MISSION</h2>
+        <p>To impart training to students in emerging technologies to product development</p>
+        <ol>
+            <li>To promote research & innovation skills through professional guidance</li>
+            <li>To originate social technocrats who perceive societal problems as being solvable by applying technology.</li>
+            <li>To produce professionals with strong values and zeal to serve society.</li>
+            <li>To create leaders with strong communication skills who can drive, inspire, and guide the groups they work with.</li>
+        </ol>
+    </div>
+
+    <div class="divider"></div> 
+    <div class="right-side">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+          
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="btech">B.Tech</option>
+                <option value="mtech">M.Tech</option>
+                <option value="msc">M.Sc</option>
+            </select>  
+            <label for="">
+                <input type="checkbox" required style="text-align: center;">Agree.
+            </label>
+
+            <button type="submit" onclick="window.alert('Registartion completed successfully!')">Register</button>
+        </form>
+    </div>
+</body>
+</html>
